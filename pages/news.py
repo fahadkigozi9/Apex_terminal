@@ -1,7 +1,7 @@
 """News page — aggregated from Reuters, CNBC, MarketWatch, FXStreet, Yahoo Finance."""
 
 import streamlit as st
-from data import get_quotes, get_ohlcv, get_ticker_info, list(RSS_FEEDS.keys())
+from data import get_quotes, get_ohlcv, get_ticker_info, RSS_FEEDS
 
 SOURCE_COLORS = {
     "Reuters":       "#f5a623",
