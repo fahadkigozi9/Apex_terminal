@@ -24,6 +24,11 @@ if css_path.exists():
     with open(css_path) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+import os
+import sys
+
+# Ensure current directory and subdirectories are added to Python path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from pages import markets, news, watchlist, forex, gold, macro
 
