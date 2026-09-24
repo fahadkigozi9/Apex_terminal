@@ -1,12 +1,12 @@
 """Gold & Forex deep-dive page — tailored for Fahad's XAUUSDz / EURUSDz trading."""
 
 import streamlit as st
-from utils.data import (
+from data import (
     get_quotes, get_ohlcv, get_ticker_info,
     fetch_gold_news, fetch_forex_news,
     GOLD_SYMBOLS, FOREX_PAIRS,
 )
-from utils.charts import candlestick_chart, line_chart
+from charts import candlestick_chart, line_chart
 
 
 def _badge(pct: float) -> str:
