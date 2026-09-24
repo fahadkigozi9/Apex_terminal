@@ -1,8 +1,8 @@
 """Markets overview page — indices, commodities, crypto."""
 
 import streamlit as st
-from utils.data import get_quotes, get_ohlcv, INDICES, COMMODITIES, CRYPTO, now_utc_str
-from utils.charts import candlestick_chart, line_chart
+from data import get_quotes, get_ohlcv, INDICES, COMMODITIES, CRYPTO, now_utc_str
+from charts import candlestick_chart, line_chart
 
 
 def _color(pct: float) -> str:
