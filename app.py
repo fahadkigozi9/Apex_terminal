@@ -14,8 +14,16 @@ st.set_page_config(
 )
 
 # Inject global CSS
-with open("assets/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+import os
+from pathlib import Path
+
+# Build an absolute path to assets/style.css relative to app.py
+css_path = Path(__file__).parent / "assets" / "style.css"
+
+if css_path.exists():
+    with open(css_path) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 
 from pages import markets, news, watchlist, forex, gold, macro
 
