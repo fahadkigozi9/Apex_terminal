@@ -1,8 +1,8 @@
 """Watchlist page — user can add/remove custom symbols."""
 
 import streamlit as st
-from utils.data import get_quotes, get_ohlcv
-from utils.charts import line_chart
+from data import get_quotes, get_ohlcv
+from charts import line_chart
 
 DEFAULT_WATCHLIST = ["GC=F", "EURUSD=X", "GBPUSD=X", "^GSPC", "BTC-USD", "CL=F"]
 
