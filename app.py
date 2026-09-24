@@ -30,7 +30,7 @@ import sys
 # Ensure current directory and subdirectories are added to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from pages import forex, news, watclist, markets, macro, gold
+from pages import forex, news, watchlist, markets, macro, gold
 
 tabs = st.tabs(["📈 Markets", "🥇 Gold/FX", "👁 Watch", "📰 News", "🌐 Macro"])
 
