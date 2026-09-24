@@ -1,8 +1,8 @@
 """Macro page — economic calendar, DXY, yields, central bank news."""
 
 import streamlit as st
-from utils.data import get_quotes, get_ohlcv, fetch_economic_calendar, fetch_news, now_utc_str
-from utils.charts import line_chart, multi_line_chart
+from data import get_quotes, get_ohlcv, fetch_economic_calendar, fetch_news, now_utc_str
+from charts import line_chart, multi_line_chart
 import pandas as pd
 
 MACRO_SYMBOLS = {
